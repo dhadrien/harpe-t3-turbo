@@ -18,7 +18,7 @@ export default function HomePage() {
         </h1>
         <AuthShowcase />
 
-        <CreatePostForm />
+        {/* <CreatePostForm />
         <div className="h-[40vh] w-full max-w-2xl overflow-y-scroll">
           <Suspense
             fallback={
@@ -31,7 +31,7 @@ export default function HomePage() {
           >
             <PostList />
           </Suspense>
-        </div>
+        </div> */}
       </div>
     </main>
   );

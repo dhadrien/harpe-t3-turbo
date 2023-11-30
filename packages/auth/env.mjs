@@ -5,6 +5,9 @@ export const env = createEnv({
   server: {
     AUTH_DISCORD_ID: z.string().min(1),
     AUTH_DISCORD_SECRET: z.string().min(1),
+    AUTH_NOTION_ID: z.string().min(1),
+    AUTH_NOTION_SECRET: z.string().min(1),
+    AUTH_NOTION_REDIRECT_URI: z.string().min(1),
     AUTH_SECRET:
       process.env.NODE_ENV === "production"
         ? z.string().min(1)
@@ -21,6 +24,9 @@ export const env = createEnv({
   runtimeEnv: {
     AUTH_DISCORD_ID: process.env.AUTH_DISCORD_ID,
     AUTH_DISCORD_SECRET: process.env.AUTH_DISCORD_SECRET,
+    AUTH_NOTION_ID: process.env.AUTH_NOTION_ID,
+    AUTH_NOTION_SECRET: process.env.AUTH_NOTION_SECRET,
+    AUTH_NOTION_REDIRECT_URI: process.env.AUTH_NOTION_REDIRECT_URI,
     AUTH_SECRET: process.env.AUTH_SECRET,
     AUTH_URL: process.env.AUTH_URL,
   },

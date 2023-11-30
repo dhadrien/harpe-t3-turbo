@@ -32,5 +32,9 @@
       "@auth/core": "0.18.0"
     }
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@acme/prettier-config",
+  "dependencies": {
+    "@acme/db": "workspace:^",
+    "drizzle-kit": "^0.20.6"
+  }
 }
